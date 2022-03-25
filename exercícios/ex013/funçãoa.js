@@ -1,5 +1,5 @@
-function soma(n1=0,n2=0) {
-    return n1 + n2
+function MultiplicarPorDois (valor) {
+    return valor* 2
 }
 
-console.log(soma(7, 9))
+console.log(MultiplicarPorDois(6))

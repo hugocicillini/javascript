@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Programa</title>
-    <style>
-        body {
-            background-color: rgba(255, 0, 0, 0.185);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="troll.png" type="image/x-icon">
+    <title>Troll Page</title>
 </head>
 <body>
-    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea maxime quidem error at reiciendis quo, cum ipsam quibusdam, accusamus itaque nobis velit nisi facere exercitationem dolorum id! Perferendis, totam tempore?</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolor sequi suscipit provident nemo totam ex aliquam voluptatum cupiditate, quos ea doloribus, tempora quam amet iste fugit, voluptate repudiandae architecto.</p>
+    <h1>Testando botões com funções</h1>
+    <button type="button" onclick="myFunction ()">Clique Aqui!</button>
+
+    <p id="demo1"></p>
+
+    <button type="button" onclick="myFunction2 ()">Clique Aqui!</button>
+
+    <p id="demo2"></p>
+
+    <input name="text" type="text">
+
     <script>
-        window.alert('Minha primeira mensagem')
-        window.confirm('Está gostando de Js?')
-        window.prompt('Qual é seu nome?')
+        function myFunction () {
+            document.getElementById('demo1').innerHTML = "Hello"
+        }
+        function myFunction2 () {
+            document.getElementById('demo2').innerHTML = "How are you?"
+        }
     </script>
 </body>
 </html>
